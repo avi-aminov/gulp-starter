@@ -1,0 +1,17 @@
+@import 'vars';
+@import 'mixin';
+
+body{
+    background-color: $bg-color;
+
+    @include for-desktop-up {
+        color: $text-color;
+    }
+
+    .container{
+
+        @include for-desktop-up {
+            font-size: 24px;
+        }
+    }
+}
